@@ -1,159 +1,55 @@
-
 /* Forest Lawncare LLC - Website Styles */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7f1;
-    color: #333333;
-    line-height: 1.6;
-}
-
-#wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-
-header {
-    background-color: #244b32;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-.tagline {
-    font-size: 16px;
-    margin: 5px 0 15px;
-}
-
-.header-cta {
-    display: inline-block;
-    background-color: #d9e8c9;
-    color: #244b32;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-nav {
-    background-color: #3d6848;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav a {
-    display: block;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #244b32;
-}
-
-main {
-    padding: 25px;
-}
-
-.top-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-
-.intro-box,
-.service-area-box {
-    background-color: #edf3e8;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-h2 {
-    color: #244b32;
-}
-
-h3 {
-    color: #3d6848;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #3d6848;
-    color: white;
-    padding: 10px 18px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #244b32;
-}
-
-.explore-section {
-    margin-top: 30px;
-}
-
-.explore-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card {
-    border: 1px solid #d5dfd0;
-    border-radius: 8px;
-    padding: 18px;
-    background-color: #ffffff;
-}
-
-.card a {
-    color: #244b32;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #244b32;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 25px;
-}
-
-footer a {
-    color: #d9e8c9;
-}
-
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f7f1; color: #333; line-height: 1.65; }
+a { color: #28583a; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #c18b32; outline-offset: 3px; }
+#wrapper { max-width: 1100px; margin: 0 auto; background: #fff; min-height: 100vh; box-shadow: 0 0 25px rgba(28,55,35,.08); }
+header { background: linear-gradient(135deg, #1f432c, #3d6848); color: #fff; padding: 34px 24px; text-align: center; }
+header h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.4rem); letter-spacing: 1.5px; }
+.tagline { margin: 5px 0 18px; color: #e4efdf; }
+.header-cta { display: inline-block; background: #e1edda; color: #244b32; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+nav { background: #315b3d; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+nav a { display: block; color: #fff; padding: 14px 20px; text-decoration: none; }
+nav a:hover, nav a:focus { background: #244b32; }
+main { padding: 28px; }
+h2 { color: #244b32; line-height: 1.25; }
+h3 { color: #315b3d; line-height: 1.3; }
+.top-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 22px; }
+.intro-box, .service-area-box { background: #edf3e8; padding: 24px; border-radius: 9px; }
+.btn { display: inline-block; background: #315b3d; color: #fff; padding: 11px 19px; text-decoration: none; border: 0; border-radius: 5px; font: inherit; font-weight: bold; cursor: pointer; }
+.btn:hover { background: #244b32; }
+.explore-section, .content-section { margin-top: 30px; }
+.explore-grid, .service-grid, .tips-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.card { border: 1px solid #d5dfd0; border-radius: 8px; padding: 20px; background: #fff; }
+.card h3 { margin-top: 0; }
+.card a { color: #244b32; font-weight: bold; }
+.page-intro { padding: 24px; background: #edf3e8; border-left: 5px solid #6f945d; border-radius: 8px; }
+.page-intro h2 { margin: 4px 0 10px; font-size: 2rem; }
+.page-intro p:last-child { margin-bottom: 0; }
+.eyebrow { color: #54734b; font-weight: bold; font-size: .82rem; letter-spacing: 1.5px; }
+.shaded-section { background: #f2f6ef; padding: 24px; border-radius: 8px; }
+.two-column { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+.highlight-panel { background: #edf3e8; border-radius: 8px; padding: 20px; }
+.gallery-placeholder-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+.gallery-placeholder { min-height: 155px; display: grid; place-items: center; text-align: center; padding: 18px; border: 2px dashed #a9bca0; border-radius: 8px; color: #536b4b; background: linear-gradient(145deg, #edf3e8, #dfe9d8); }
+.estimate-form { max-width: 720px; }
+.estimate-form label { display: block; font-weight: bold; margin: 14px 0 5px; }
+.estimate-form input, .estimate-form select, .estimate-form textarea { display: block; width: 100%; padding: 11px; border: 1px solid #aebbaa; border-radius: 5px; font: inherit; background: #fff; color: #333; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+.form-button { margin-top: 16px; }
+.small-note { font-size: .92rem; color: #5d665b; }
+.faq-list { display: grid; gap: 12px; }
+.faq-item { padding: 8px 0 14px; border-bottom: 1px solid #d5dfd0; }
+.faq-item h3 { margin-bottom: 5px; }
+.faq-item p { margin-top: 5px; }
+footer { background: #244b32; color: #fff; text-align: center; padding: 22px; margin-top: 28px; }
+footer p { margin: 5px 0; }
+footer a { color: #e1edda; }
 @media (max-width: 700px) {
-    .top-grid,
-    .explore-grid {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
+  main { padding: 18px; }
+  .top-grid, .explore-grid, .service-grid, .tips-grid, .two-column, .gallery-placeholder-grid, .form-grid { grid-template-columns: 1fr; }
+  nav ul { flex-direction: column; text-align: center; }
+  nav a { padding: 11px; }
 }
