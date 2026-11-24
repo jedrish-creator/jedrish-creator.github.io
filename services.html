@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lawn mowing, trimming, edging, and seasonal yard cleanup from Forest Lawncare LLC in the Quad Cities.">
+  <title>Lawn Care Services | Forest Lawncare LLC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <div class="header-brand">
+      <h1>FOREST LAWNCARE LLC</h1>
+      <p class="tagline">Keeping the Quad Cities Green</p>
+    </div>
+    <a class="header-cta" href="services.html#estimate">Request an Estimate</a>
+  </header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About &amp; Gallery</a></li>
+      <li><a href="tips.html">Tips &amp; FAQ</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <section class="page-intro">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Lawn Care Services</h2>
+      <p>Keep your property looking neat and cared for with lawn maintenance from Forest Lawncare LLC. Contact us to talk about your property and request an estimate.</p>
+    </section>
+    <section class="content-section">
+      <div class="service-grid">
+        <article class="card service-card"><h3>Lawn Mowing</h3><p>Routine grass cutting to help keep your lawn neat and maintained throughout the growing season.</p></article>
+        <article class="card service-card"><h3>Trimming</h3><p>Detail work around trees, fences, landscaping, and other areas that a mower cannot easily reach.</p></article>
+        <article class="card service-card"><h3>Edging</h3><p>Clean edges along sidewalks, driveways, and other lawn borders for a tidy finished appearance.</p></article>
+        <article class="card service-card"><h3>Seasonal Yard Cleanup</h3><p>Help with outdoor cleanup as the seasons change and your property needs a little extra attention.</p></article>
+      </div>
+    </section>
+    <section class="content-section shaded-section">
+      <h2>Service Area</h2>
+      <p>We serve residential and commercial properties in the Quad Cities, including Moline and Rock Island, Illinois, and Davenport and Bettendorf, Iowa. If you are nearby, reach out to ask about service availability.</p>
+    </section>
+    <section class="content-section" id="estimate">
+      <h2>Request an Estimate</h2>
+      <p>Tell us a little about your property and what kind of lawn care you need. This form opens an email addressed to Forest Lawncare LLC; it does not submit information to an online database.</p>
+      <form class="estimate-form" action="mailto:forestlawncare@gmail.com" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <div><label for="customer-name">Name</label><input id="customer-name" name="Name" type="text" required></div>
+          <div><label for="customer-email">Email</label><input id="customer-email" name="Email" type="email" required></div>
+          <div><label for="customer-phone">Phone (optional)</label><input id="customer-phone" name="Phone" type="tel"></div>
+          <div><label for="property-city">Property city</label><input id="property-city" name="Property city" type="text"></div>
+        </div>
+        <label for="requested-service">Service needed</label>
+        <select id="requested-service" name="Service needed">
+          <option value="Lawn mowing">Lawn mowing</option>
+          <option value="Trimming and edging">Trimming and edging</option>
+          <option value="Seasonal yard cleanup">Seasonal yard cleanup</option>
+          <option value="Multiple services">Multiple services</option>
+          <option value="Not sure yet">Not sure yet</option>
+        </select>
+        <label for="property-details">Tell us about your property or project</label>
+        <textarea id="property-details" name="Project details" rows="5" placeholder="Approximate lawn size, location, or anything else we should know."></textarea>
+        <button class="btn form-button" type="submit">Send Estimate Request</button>
+      </form>
+      <p class="small-note">Prefer email? Contact us directly at <a href="mailto:forestlawncare@gmail.com">forestlawncare@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Forest Lawncare LLC | Quad Cities Area</p>
+    <p>Email: <a href="mailto:forestlawncare@gmail.com">forestlawncare@gmail.com</a></p>
+    <p>Copyright &copy; 2026 Forest Lawncare LLC</p>
+  </footer>
+</div>
+</body>
+</html>
